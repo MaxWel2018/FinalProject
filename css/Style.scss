@@ -1,0 +1,120 @@
+$button-collor: #d66324;
+$bg-color: #353434;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  width: 1500px;
+  margin: 0 auto;
+
+}
+
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+@font-face {
+  font-family: 'Amplify';
+  src: url('fonts/Amplify_PersonalUseOnly.ttf') format('truetype');
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+header {
+  height: 80px;
+  color: white;
+  background: $bg-color;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+
+
+  .logo {
+    display: flex;
+    width: 10%;
+    align-items: center;
+    height: 60px;
+    font-size: 40px;
+    font-family: "Amplify", sans-serif!important;
+    color: white;
+    line-height: 0.5;
+    text-align: center;
+    border-right: solid 0.3px #404040;
+    margin-left: 50px;
+  }
+
+  menu {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 40px;
+    width: 30%;
+    .menuItem {
+      :hover {
+        background: #aaaaaa73;
+      }
+      :active {
+        background: darken(#aaaaaa73, 15%);
+      }
+
+    }
+
+    a {
+      padding: 30px 10px;
+      color: white;
+      font-family: 'Lato', sans-serif!important;
+
+    }
+  }
+
+  .social-network {
+    margin-left: 500px;
+    display: flex;
+    justify-content: space-around;
+
+    a {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 36px;
+      height: 41px;
+      margin-right: 10px;
+      border: solid 2px $button-collor;
+    }
+
+    img {
+      width:11px;
+      height: 11px;
+      margin: 0;
+      padding: 0;
+    }
+  }
+
+  .btn-style {
+    border-radius: 2px;
+    background-color: $button-collor;
+    margin-left: 45%;
+    a{
+      display: block;
+      padding: 10px 35px;
+      font-family: 'Lato', sans-serif;
+      color: white;
+      font-weight: bold;
+
+    }
+    :hover{
+      background: lighten($button-collor,15%);
+      font-weight: bold;
+    }
+    :active{
+      background: darken($button-collor,5%);
+    }
+
+
+  }
+}
